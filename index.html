@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+ <!--   
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+    <th style="width:40%;">Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbkop</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Koniglich Essen</td>
+    <td>Germany</td>
+  </tr>
+</table>
+<i class="fa-solid fa-magnifying-glass"></i>
+-->
+<!--
+<div class="box">
+  <input type="text" placeholder="search">
+  <a href="index2.html">
+  <i class="fas fa-search"></i>
+  </a>
+</div>
+-->
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      
+      <li class="nav-item">
+        <a onclick="triangle();" class="nav-link" href="#">Triangle</a>
+      </li>
+      <li class="nav-item">
+        <a onclick="circle();" class="nav-link" href="#">circle</a>
+      </li>
+      <li class="nav-item">
+        <a onclick="square();" class="nav-link" href="#">square</a>
+      </li>
+      <li class="nav-item">
+        <a onclick="cylinder();" class="nav-link" href="#">cylinder</a>
+      </li>
+    </ul>
+  </div>
+  <div id="triangle" class="card-body">
+    <h5 class="card-title">Triangle</h5>
+    <div class="text-center">
+      <img src="triangle.jpg" class="rounded" alt="...">
+    </div>
+    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+    <br>
+    <br>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">A Value:</label>
+      <input type="email" class="form-control" id="a" placeholder="enter A Value">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">B Value:</label>
+      <input type="email" class="form-control" id="b" placeholder="enter B Value">
+    </div>
+    <form class="row g-3">
+      
+      <div class="col-auto">
+        <input id="result" type="text" class="form-control" id="inputPassword2" placeholder="Area">
+      </div>
+      <div class="col-auto">
+        <button onclick="areaTriangle();" type="submit" class="btn btn-primary mb-3">Calcualte </button>
+      </div>
+    </form>
+  </div>
+  <div id="circle" class="card-body">
+    <h5 class="card-title">circle</h5>
+    <div class="text-center">
+      <img src="circle.jpg" class="rounded" alt="...">
+    </div>
+    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+    <br>
+    <br>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">R Value:</label>
+      <input type="email" class="form-control" id="r" placeholder="enter R Value">
+    </div>
+    <form class="row g-3">
+      
+      <div class="col-auto">
+        <input id="resultt" type="text" class="form-control" id="inputPassword2" placeholder="Area">
+      </div>
+      <div class="col-auto">
+        <button onclick="areaCircle();" type="submit" class="btn btn-primary mb-3">Calcualte </button>
+      </div>
+    </form>
+  </div>
+  <div id="square" class="card-body">
+    <h5 class="card-title">square</h5>
+    <div class="text-center">
+      <img src="square.jpg" class="rounded" alt="...">
+    </div>
+    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+    <br>
+    <br>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">S Value:</label>
+      <input type="text" class="form-control" id="s" placeholder="enter S Value">
+    </div>
+    <form class="row g-3">
+      
+      <div class="col-auto">
+        <input id="resulttt" type="text" class="form-control" id="inputPassword2" placeholder="Area">
+      </div>
+      <div class="col-auto">
+        <button onclick="areaSqaure();" type="submit" class="btn btn-primary mb-3">Calcualte </button>
+      </div>
+    </form>
+  </div>
+  <div id="cylinder" class="card-body">
+    <h5 class="card-title">cylinder</h5>
+    <div class="text-center">
+      <img src="cylinder.jpg" class="rounded" alt="...">
+    </div>
+    <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+    <br>
+    <br>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Radius Value:</label>
+      <input type="text" class="form-control" id="R" placeholder="enter Radius Value">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Height Value:</label>
+      <input type="text" class="form-control" id="B" placeholder="enter Height Value">
+    </div>
+  
+    <form class="row g-3">
+      
+      <div class="col-auto">
+        <input id="resultttt" type="text" class="form-control" id="inputPassword2" placeholder="Area">
+      </div>
+      <div class="col-auto">
+        <button onclick="areaCylinder();" type="submit" class="btn btn-primary mb-3">Calcualte </button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="script.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>
